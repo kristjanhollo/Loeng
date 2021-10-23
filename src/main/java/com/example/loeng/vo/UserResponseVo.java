@@ -1,15 +1,8 @@
-package com.example.loeng.domain;
+package com.example.loeng.vo;
 
+public class UserResponseVo {
 
-import javax.persistence.*;
-
-@Entity
-public class User {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-
     private String name;
     private String email;
 
@@ -18,11 +11,6 @@ public class User {
     }
 
     public void setId(Long id) {
-        this.id = id;
-    }
-
-
-    public void setId(long id) {
         this.id = id;
     }
 
